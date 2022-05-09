@@ -33,7 +33,7 @@ html {
   &__img {
     margin-block: 6rem;
     width: 100%;
-    padding: 4;
+    padding: 4rem;
   }
   &__text-box {
     color: white;
@@ -89,5 +89,59 @@ html {
   }
   &__fb {
     padding-right: 0.65rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    background-image: url(/bg-desktop.svg);
+    background-size: 80%;
+    background-size: contain;
+    height: 100vh;
+  }
+  .content {
+    &__logo {
+      width: 10%;
+      margin-left: 5rem;
+    }
+    &__img {
+      width: 125%;
+      margin-bottom: 2rem;
+      margin-top: 15rem;
+      padding: 0;
+    }
+    &__social {
+      justify-content: flex-end;
+    }
+    &__text-box {
+      width: 35%;
+      text-align: left;
+      margin-left: 25rem;
+    }
+    &__text {
+      font-size: 2.25rem;
+    }
+    &__title {
+      font-size: 5rem;
+      width: 90%;
+    }
+    &__button {
+      width: 30%;
+      font-size: 2.4rem;
+      color: $color-purple;
+    }
+    &__social {
+      width: 91%;
+      justify-content: flex-end;
+      i {
+        margin-inline: 3rem;
+        transform: scale(2.5);
+      }
+    }
+  }
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
