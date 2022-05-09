@@ -16,7 +16,7 @@ html {
 .container {
   background-color: $color-purple;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: url(/bg-mobile.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -92,7 +92,7 @@ html {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1250px) {
   .container {
     background-image: url(/bg-desktop.svg);
     background-size: 80%;
@@ -102,7 +102,7 @@ html {
   .content {
     &__logo {
       width: 10%;
-      margin-left: 5rem;
+      margin-left: 20rem;
     }
     &__img {
       width: 125%;
